@@ -92,7 +92,7 @@ export default function SignIn() {
                     <div>
                       <Divider textAlign="left">
                         <Typography
-                          sx={{ color: "#0F7490", marginBottom: "15px" }}
+                          sx={{ color: "#0F7490", marginBottom: "5px" }}
                           variant="bold"
                           component={"h3"}
                         >
@@ -138,10 +138,19 @@ export default function SignIn() {
                         ),
                       }}
                     />
-                    <p>
-                      <span style={{ color: "green" }}>Login as admin: </span>
-                       admin@mfa.com | admin12345
-                    </p>
+                    <Typography
+                      sx={{
+                        background: "#0A1929",
+                        borderLeft: "5px solid #FFD700",
+                        borderRadius: "10px",
+                        padding: "10px",
+                        color: "#ffffff",
+                      }}
+                    >
+                      You can perform any CRUD operation,<br></br>
+                      will not effect in main database.<br></br>
+                      Login: admin@mfa.com | admin12345
+                    </Typography>
                     <Button
                       variant="outlined"
                       fullWidth
